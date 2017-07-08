@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="still time.ttf">
+            <string>StillTime-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Party_Rock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-7D-9od">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="cLK-Eq-hs9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-YU-6gh">
+                                <rect key="frame" x="0.0" y="159" width="375" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uyL-L1-y8c">
+                                        <rect key="frame" x="9" y="6.5" width="357" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v43-ZD-pAm">
+                                                <rect key="frame" x="0.0" y="0.0" width="119" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Videos"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-Je-AAm">
+                                                <rect key="frame" x="119" y="0.0" width="119" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Rate">
+                                                    <color key="titleColor" red="0.46466529187817252" green="0.46466529187817252" blue="0.46466529187817252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQU-8O-RxY">
+                                                <rect key="frame" x="238" y="0.0" width="119" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Events">
+                                                    <color key="titleColor" red="0.46466529187817252" green="0.46466529187817252" blue="0.46466529187817252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88223746827411165" green="0.88223746827411165" blue="0.88223746827411165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uyL-L1-y8c" firstAttribute="centerY" secondItem="w6E-YU-6gh" secondAttribute="centerY" id="6Sx-9G-3NQ"/>
+                                    <constraint firstItem="uyL-L1-y8c" firstAttribute="leading" secondItem="w6E-YU-6gh" secondAttribute="leading" constant="9" id="DbM-wp-UDG"/>
+                                    <constraint firstAttribute="height" constant="49" id="Nlg-0a-wMN"/>
+                                    <constraint firstAttribute="trailing" secondItem="uyL-L1-y8c" secondAttribute="trailing" constant="9" id="x7m-Yh-X8P"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSc-ub-b06">
+                                <rect key="frame" x="0.0" y="208" width="375" height="459"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="1Gq-eO-8zA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Gq-eO-8zA" id="KeU-u4-C2T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="7xa-9C-nre">
+                                                    <rect key="frame" x="8" y="7" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="50C-vr-qIS"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="dLq-q0-h0y"/>
+                                                        <constraint firstAttribute="width" constant="80" id="hN3-7R-QaF"/>
+                                                        <constraint firstAttribute="height" constant="80" id="ty8-4P-DeE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is the son goes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-hE-LbH">
+                                                    <rect key="frame" x="98" y="28" width="259" height="37.5"/>
+                                                    <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="31"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="vDf-hE-LbH" firstAttribute="leading" secondItem="7xa-9C-nre" secondAttribute="trailing" constant="10" id="4ax-cE-S6m"/>
+                                                <constraint firstItem="7xa-9C-nre" firstAttribute="leading" secondItem="KeU-u4-C2T" secondAttribute="leading" constant="8" id="UKE-RV-MZO"/>
+                                                <constraint firstItem="7xa-9C-nre" firstAttribute="centerY" secondItem="KeU-u4-C2T" secondAttribute="centerY" id="bRY-Eq-1s1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vDf-hE-LbH" secondAttribute="trailing" constant="10" id="orc-LJ-OLL"/>
+                                                <constraint firstItem="vDf-hE-LbH" firstAttribute="centerY" secondItem="KeU-u4-C2T" secondAttribute="centerY" id="p4Z-YO-mFN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FSc-ub-b06" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FQs-OG-mR2"/>
+                            <constraint firstAttribute="trailing" secondItem="FSc-ub-b06" secondAttribute="trailing" id="NRQ-SA-jAw"/>
+                            <constraint firstItem="FSc-ub-b06" firstAttribute="top" secondItem="w6E-YU-6gh" secondAttribute="bottom" id="Nt5-a9-ZnU"/>
+                            <constraint firstAttribute="trailing" secondItem="w6E-YU-6gh" secondAttribute="trailing" id="VLx-mH-QCa"/>
+                            <constraint firstAttribute="trailing" secondItem="1ZF-7D-9od" secondAttribute="trailing" id="Wzp-qw-Fzb"/>
+                            <constraint firstItem="1ZF-7D-9od" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bgd-hV-wOi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FSc-ub-b06" secondAttribute="bottom" id="d02-QZ-Yz1"/>
+                            <constraint firstItem="1ZF-7D-9od" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lhA-Nv-KQO"/>
+                            <constraint firstItem="w6E-YU-6gh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pNF-Rs-9Io"/>
+                            <constraint firstItem="w6E-YU-6gh" firstAttribute="top" secondItem="1ZF-7D-9od" secondAttribute="bottom" id="xvj-Lk-g7b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Lu4-gA-mEo" kind="showDetail" identifier="VideoVC" id="VgW-2w-uFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="1nf-qf-M4F">
+            <objects>
+                <viewController id="Lu4-gA-mEo" customClass="VideoVC" customModule="Party_Rock_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWK-ii-Wsw"/>
+                        <viewControllerLayoutGuide type="bottom" id="qgm-cq-mXF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="otR-iW-rdc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnW-YY-5MI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="Voz-by-HvM"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90791560913705582" green="0.90791560913705582" blue="0.90791560913705582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BnW-YY-5MI" firstAttribute="top" secondItem="otR-iW-rdc" secondAttribute="top" id="MKQ-rX-2zT"/>
+                            <constraint firstItem="BnW-YY-5MI" firstAttribute="leading" secondItem="otR-iW-rdc" secondAttribute="leading" id="SJm-9V-oPt"/>
+                            <constraint firstAttribute="trailing" secondItem="BnW-YY-5MI" secondAttribute="trailing" id="lhP-O6-osA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKc-Hq-iTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010.4" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="partybanner" width="610" height="297"/>
+    </resources>
+</document>

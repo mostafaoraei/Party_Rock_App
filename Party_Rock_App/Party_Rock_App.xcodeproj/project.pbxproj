@@ -15,6 +15,8 @@
 		73720A431F109FA9008FBBBA /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 73720A421F109FA9008FBBBA /* Contents.json */; };
 		73720A451F10AB64008FBBBA /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73720A441F10AB64008FBBBA /* still time.ttf */; };
 		73720A4D1F10AEF0008FBBBA /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73720A4C1F10AEF0008FBBBA /* VideoVC.swift */; };
+		73720A4F1F10C296008FBBBA /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73720A4E1F10C296008FBBBA /* PartyRock.swift */; };
+		73720A511F10C596008FBBBA /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73720A501F10C596008FBBBA /* PartyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		73720A421F109FA9008FBBBA /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		73720A441F10AB64008FBBBA /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		73720A4C1F10AEF0008FBBBA /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		73720A4E1F10C296008FBBBA /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
+		73720A501F10C596008FBBBA /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		73720A4A1F10ABB3008FBBBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				73720A501F10C596008FBBBA /* PartyCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		73720A4B1F10ABBF008FBBBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				73720A4E1F10C296008FBBBA /* PartyRock.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -180,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73720A4D1F10AEF0008FBBBA /* VideoVC.swift in Sources */,
+				73720A511F10C596008FBBBA /* PartyCell.swift in Sources */,
+				73720A4F1F10C296008FBBBA /* PartyRock.swift in Sources */,
 				73720A331F109CF1008FBBBA /* MainVC.swift in Sources */,
 				73720A311F109CF1008FBBBA /* AppDelegate.swift in Sources */,
 			);

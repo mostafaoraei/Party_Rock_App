@@ -155,14 +155,30 @@
                                     <constraint firstAttribute="height" constant="227" id="Voz-by-HvM"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-Fc-I3P">
+                                <rect key="frame" x="21" y="351" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="qqG-Lc-wkr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90791560913705582" green="0.90791560913705582" blue="0.90791560913705582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BnW-YY-5MI" firstAttribute="top" secondItem="otR-iW-rdc" secondAttribute="top" id="MKQ-rX-2zT"/>
+                            <constraint firstItem="F6X-Fc-I3P" firstAttribute="trailing" secondItem="otR-iW-rdc" secondAttribute="trailingMargin" constant="5" id="QCa-1k-H2F"/>
                             <constraint firstItem="BnW-YY-5MI" firstAttribute="leading" secondItem="otR-iW-rdc" secondAttribute="leading" id="SJm-9V-oPt"/>
+                            <constraint firstItem="F6X-Fc-I3P" firstAttribute="leading" secondItem="otR-iW-rdc" secondAttribute="leadingMargin" constant="5" id="jQa-Mo-xtl"/>
                             <constraint firstAttribute="trailing" secondItem="BnW-YY-5MI" secondAttribute="trailing" id="lhP-O6-osA"/>
+                            <constraint firstItem="F6X-Fc-I3P" firstAttribute="top" secondItem="BnW-YY-5MI" secondAttribute="bottom" constant="124" id="opA-l5-9pa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoTitle" destination="F6X-Fc-I3P" id="HhS-gv-RXP"/>
+                        <outlet property="webView" destination="BnW-YY-5MI" id="Mx3-So-g8b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKc-Hq-iTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
